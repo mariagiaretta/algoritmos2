@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="maria.giaretta"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 11:05:53 "/>
+        <attribute name="created" value="bWFyaWEuZ2lhcmV0dGE7TlQzMzsyMDI0LTAzLTA0OyIxMTowMjowNSAiOzI4NjA="/>
+        <attribute name="edited" value="bWFyaWEuZ2lhcmV0dGE7TlQzMzsyMDI0LTAzLTA0OyIxMTowNTo1MyAiOzE7Mjk3NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="b, h, p, a, d" type="Real" array="False" size=""/>
+            <input variable="b"/>
+            <input variable="h"/>
+            <assign variable="p" expression="2*b+2*h"/>
+            <assign variable="a" expression="b*h"/>
+            <assign variable="d" expression="(b^2)+(h^2)"/>
+            <output expression="&quot;Per&#237;metro: &quot;&amp;p" newline="True"/>
+            <output expression="&quot;&#193;rea :&quot;&amp;a" newline="True"/>
+            <output expression="&quot;Diagonal: &quot;&amp;sqrt(d)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

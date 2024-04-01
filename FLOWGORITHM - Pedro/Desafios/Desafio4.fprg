@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="maria.giaretta"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 09:50:37 "/>
+        <attribute name="created" value="bWFyaWEuZ2lhcmV0dGE7TlQzMzsyMDI0LTAzLTA0OyIwOToyODoxNyAiOzI4Nzg="/>
+        <attribute name="edited" value="bWFyaWEuZ2lhcmV0dGE7TlQzMzsyMDI0LTAzLTA0OyIwOTo1MDozNyAiOzI7Mjk4NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, c, d, u" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="c" expression="n/100"/>
+            <assign variable="d" expression="(n/10)%10"/>
+            <assign variable="u" expression="n%10"/>
+            <output expression="&quot;N&#250;mero: &quot;&amp;n" newline="True"/>
+            <output expression="&quot; Ao contr&#225;rio: &quot;&amp;u&amp;d&amp;c" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

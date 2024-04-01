@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="maria.giaretta"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 02:13:03 "/>
+        <attribute name="created" value="bWFyaWEuZ2lhcmV0dGE7TlQzMzsyMDI0LTAzLTA0OyIwMTo1MzoyOCAiOzI4NzA="/>
+        <attribute name="edited" value="bWFyaWEuZ2lhcmV0dGE7TlQzMzsyMDI0LTAzLTA0OyIwMjoxMzowMyAiOzQ7Mjk3MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="c, f" type="Real" array="False" size=""/>
+            <output expression="&quot;Entre uma temperatura para Fahrenheit:&quot;" newline="True"/>
+            <input variable="f"/>
+            <assign variable="c" expression="(f-32)*(5/9)"/>
+            <output expression="&quot;A temperatura de Fahrenheit transformada para Celsius &#233;: &quot;&amp;c&amp;&quot;&#176;C&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

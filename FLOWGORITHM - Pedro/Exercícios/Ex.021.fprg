@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="maria.giaretta"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-14 10:26:15 "/>
+        <attribute name="created" value="bWFyaWEuZ2lhcmV0dGE7TlQzMzsyMDI0LTAyLTA3OyIxMDozMDoxMSAiOzI4NTk="/>
+        <attribute name="edited" value="bWFyaWEuZ2lhcmV0dGE7TlQzMzsyMDI0LTAyLTE0OyIxMDoyNjoxNSAiOzU7Mjk3OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="salbase, saltotal, inss, vr, vt, bcir, ir, saliq, i" type="Real" array="False" size=""/>
+            <declare name="dias" type="Integer" array="False" size=""/>
+            <declare name="nome" type="String" array="False" size=""/>
+            <assign variable="saltotal" expression="(salbase/30)*dias"/>
+            <assign variable="vt" expression="(saltotal*0.06)"/>
+            <assign variable="vr" expression="saltotal*0.01"/>
+            <if expression="saltotal &lt;= 1412">
+                <then>
+                    <assign variable="inss" expression="(saltotal*0.075)"/>
+                </then>
+                <else>
+                    <if expression="saltotal &lt;=2666.68">
+                        <then>
+                            <assign variable="inss" expression="(saltotal*0.09)-21.18"/>
+                        </then>
+                        <else>
+                            <if expression="saltotal &lt;= 4000.03">
+                                <then>
+                                    <assign variable="inss" expression="(saltotal*0.12)-101.18"/>
+                                </then>
+                                <else>
+                                    <if expression="saltotal &lt;= 7786.02">
+                                        <then>
+                                            <assign variable="inss" expression="(saltotal*0.14)-181.18"/>
+                                        </then>
+                                        <else>
+                                            <assign variable="inss" expression="908.86"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="bcir" expression="saltotal-inss"/>
+            <if expression="bcir &lt;= 2112">
+                <then>
+                    <assign variable="ir" expression="0.00"/>
+                </then>
+                <else>
+                    <if expression="bcir &lt;= 2826.65">
+                        <then>
+                            <assign variable="ir" expression="(bcir*0.075)-158.40"/>
+                        </then>
+                        <else>
+                            <if expression="bcir &lt;= 3751.05">
+                                <then>
+                                    <assign variable="ir" expression="(bcir*0.15)-370.40"/>
+                                </then>
+                                <else>
+                                    <if expression="bcir &lt;= 4664.68">
+                                        <then>
+                                            <assign variable="ir" expression="(bcir*0.225)-651.73"/>
+                                        </then>
+                                        <else>
+                                            <if expression="bcir &gt; 4664.68">
+                                                <then>
+                                                    <assign variable="ir" expression="(bcir*0.275)-884.96"/>
+                                                </then>
+                                                <else/>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="saliq" expression="saltotal-inss-ir-vt-vr"/>
+            <output expression="&quot;Ol&#225;,&quot; &amp; nome" newline="True"/>
+            <output expression="&quot;Seu sal&#225;rio total &#233; de R$&quot; &amp; saltotal" newline="True"/>
+            <output expression="&quot;Seu inss &#233; de R$&quot; &amp; inss" newline="True"/>
+            <output expression="&quot;Seu imposto de renda &#233; de R$&quot; &amp; ir" newline="True"/>
+            <output expression="&quot;Seu vale transporte &#233; de R$&quot; &amp; vt" newline="True"/>
+            <output expression="&quot;Seu vale refei&#231;&#227;o &#233; de R$&quot; &amp; vr" newline="True"/>
+            <output expression="&quot;Seu sal&#225;rio liquido &#233; de R$&quot; &amp; saliq" newline="True"/>
+        </body>
+    </function>
+    <function name="inss" type="Boolean" variable="resultado">
+        <parameters>
+            <parameter name="inss" type="Real" array="False"/>
+            <parameter name="saltotal" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <if expression="saltotal &lt;= 1412.00">
+                <then>
+                    <assign variable="inss" expression="(saltotal*0)/(100-0)"/>
+                </then>
+                <else>
+                    <if expression="saltotal &lt;=2666.68">
+                        <then>
+                            <assign variable="inss" expression="(saltotal*9)/(100-21.18)"/>
+                        </then>
+                        <else/>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

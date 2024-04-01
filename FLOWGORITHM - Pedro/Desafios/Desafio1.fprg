@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="maria.giaretta"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 08:47:22 "/>
+        <attribute name="created" value="bWFyaWEuZ2lhcmV0dGE7TlQzMzsyMDI0LTAzLTA0OyIwODozMDo1NSAiOzI4NzI="/>
+        <attribute name="edited" value="bWFyaWEuZ2lhcmV0dGE7TlQzMzsyMDI0LTAzLTA0OyIwODo0NzoyMiAiOzI7Mjk4Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="dia, mes, ano" type="Real" array="False" size=""/>
+            <output expression="&quot;Insira o dia&quot;" newline="True"/>
+            <input variable="dia"/>
+            <output expression="&quot;Insira o m&#234;s&quot;" newline="True"/>
+            <input variable="mes"/>
+            <output expression="&quot;Insira o ano&quot;" newline="True"/>
+            <input variable="ano"/>
+            <output expression="dia&amp;&quot;/&quot;&amp;mes&amp;&quot;/&quot;&amp;ano" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

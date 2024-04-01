@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="maria.giaretta"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-29 10:43:14 "/>
+        <attribute name="created" value="bWFyaWEuZ2lhcmV0dGE7REVTS1RPUC1UOE5GRzRTOzIwMjQtMDEtMjk7IjEwOjM2OjA0ICI7MzY4Mw=="/>
+        <attribute name="edited" value="bWFyaWEuZ2lhcmV0dGE7REVTS1RPUC1UOE5GRzRTOzIwMjQtMDEtMjk7IjEwOjQzOjE0ICI7MTszNzkw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, IMC" type="Real" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <assign variable="imc" expression="a/(b^2)"/>
+            <output expression="IMC" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

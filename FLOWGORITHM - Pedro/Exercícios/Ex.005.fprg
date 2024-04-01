@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="maria.giaretta"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-31 10:44:53 "/>
+        <attribute name="created" value="bWFyaWEuZ2lhcmV0dGE7REVTS1RPUC1UOE5GRzRTOzIwMjQtMDEtMzE7IjEwOjQ0OjM1ICI7MzY3OQ=="/>
+        <attribute name="edited" value="bWFyaWEuZ2lhcmV0dGE7REVTS1RPUC1UOE5GRzRTOzIwMjQtMDEtMzE7IjEwOjQ0OjUzICI7MjszNzg4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body/>
+    </function>
+</flowgorithm>

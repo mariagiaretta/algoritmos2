@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="maria.giaretta"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-06 09:56:34 "/>
+        <attribute name="created" value="bWFyaWEuZ2lhcmV0dGE7TlQzMzsyMDI0LTAzLTA2OyIwODozMzoyNSAiOzI4NzQ="/>
+        <attribute name="edited" value="bWFyaWEuZ2lhcmV0dGE7TlQzMzsyMDI0LTAzLTA2OyIwOTo1NjozNCAiOzI7Mjk4OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, y" type="Integer" array="False" size=""/>
+            <input variable="x"/>
+            <if expression="x&lt;=1">
+                <then>
+                    <assign variable="y" expression="1"/>
+                    <output expression="&quot;Y = f(x), sendo Y = &quot;&amp;y" newline="True"/>
+                </then>
+                <else>
+                    <if expression="x &lt;=2">
+                        <then>
+                            <assign variable="y" expression="2"/>
+                            <output expression="&quot;Y = f(x), sendo Y = &quot;&amp;y" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="x &lt;=3">
+                                <then>
+                                    <assign variable="y" expression="x^2"/>
+                                    <output expression="&quot;Y = f(x), sendo Y = &quot;&amp;y" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="x&gt;3">
+                                        <then>
+                                            <assign variable="y" expression="x^3"/>
+                                            <output expression="&quot;Y = f(x), sendo Y = &quot;&amp;y" newline="True"/>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

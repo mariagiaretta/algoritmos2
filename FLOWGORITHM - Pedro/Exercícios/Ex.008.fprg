@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="maria.giaretta"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-29 09:28:46 "/>
+        <attribute name="created" value="bWFyaWEuZ2lhcmV0dGE7REVTS1RPUC1UOE5GRzRTOzIwMjQtMDEtMjk7IjA3OjQ3OjM2ICI7MzY5Ng=="/>
+        <attribute name="edited" value="bWFyaWEuZ2lhcmV0dGE7REVTS1RPUC1UOE5GRzRTOzIwMjQtMDEtMjk7IjA5OjI4OjQ2ICI7NzszODEy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b" type="Integer" array="False" size=""/>
+            <assign variable="b" expression="1"/>
+            <while expression="b&lt;=100">
+                <if expression="b%13==0">
+                    <then>
+                        <output expression="b" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="b" expression="b+1"/>
+            </while>
+            <for variable="a" start="1" end="100" direction="inc" step="1">
+                <if expression="a%7=0">
+                    <then>
+                        <output expression="a" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

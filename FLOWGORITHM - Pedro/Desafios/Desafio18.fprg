@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="maria.giaretta"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 03:08:58 "/>
+        <attribute name="created" value="bWFyaWEuZ2lhcmV0dGE7TlQzMzsyMDI0LTAzLTA0OyIwMjo0Mzo1NCAiOzI4Njk="/>
+        <attribute name="edited" value="bWFyaWEuZ2lhcmV0dGE7TlQzMzsyMDI0LTAzLTA0OyIwMzowODo1OCAiOzE7Mjk4Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num, num2, den2, den, frac, soma, mult" type="Real" array="False" size=""/>
+            <output expression="&quot;Entre quatro valores diferentes para duas fra&#231;&#245;es:&quot;" newline="True"/>
+            <input variable="num"/>
+            <input variable="den"/>
+            <input variable="num2"/>
+            <input variable="den2"/>
+        </body>
+    </function>
+</flowgorithm>

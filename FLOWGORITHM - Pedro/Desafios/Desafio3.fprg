@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="maria.giaretta"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 09:27:15 "/>
+        <attribute name="created" value="bWFyaWEuZ2lhcmV0dGE7TlQzMzsyMDI0LTAzLTA0OyIwODo0ODoxMyAiOzI4NzU="/>
+        <attribute name="edited" value="bWFyaWEuZ2lhcmV0dGE7TlQzMzsyMDI0LTAzLTA0OyIwOToyNzoxNSAiOzI7Mjk4NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="angulo" type="Real" array="False" size=""/>
+            <input variable="angulo"/>
+            <output expression="&quot;O Cosseno &#233;: &quot;&amp;cos(angulo)" newline="True"/>
+            <output expression="&quot;O Seno &#233;: &quot;&amp;sin(angulo)" newline="True"/>
+            <output expression="&quot;A Tangente &#233;: &quot;&amp;tan(angulo)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

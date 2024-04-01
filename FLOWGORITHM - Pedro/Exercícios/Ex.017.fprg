@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="maria.giaretta"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-05 09:07:48 "/>
+        <attribute name="created" value="bWFyaWEuZ2lhcmV0dGE7REVTS1RPUC1UOE5GRzRTOzIwMjQtMDItMDU7IjA4OjM1OjI5ICI7MzY5MQ=="/>
+        <attribute name="edited" value="bWFyaWEuZ2lhcmV0dGE7REVTS1RPUC1UOE5GRzRTOzIwMjQtMDItMDU7IjA5OjA3OjQ4ICI7MjszODAx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, faltas, m&#233;dia" type="Real" array="False" size=""/>
+            <declare name="mensagem" type="String" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <input variable="faltas"/>
+            <assign variable="m&#233;dia" expression="(2*a + 3*b + 5*c)/10"/>
+            <if expression="m&#233;dia &gt;= 7.0 &amp;&amp; faltas &lt;= 25">
+                <then>
+                    <assign variable="mensagem" expression="m&#233;dia &amp; &quot; aprovado &quot;"/>
+                </then>
+                <else>
+                    <assign variable="mensagem" expression="m&#233;dia &amp; &quot; reprovado &quot;"/>
+                </else>
+            </if>
+            <output expression="mensagem" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

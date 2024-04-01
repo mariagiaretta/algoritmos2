@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="maria.giaretta"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 01:31:35 "/>
+        <attribute name="created" value="bWFyaWEuZ2lhcmV0dGE7TlQzMzsyMDI0LTAzLTA0OyIxMToyNzoyMSAiOzI4NjU="/>
+        <attribute name="edited" value="bWFyaWEuZ2lhcmV0dGE7TlQzMzsyMDI0LTAzLTA0OyIwMTozMTozNSAiOzM7Mjk3NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="cat1, cat2, hip, hip1, hip2" type="Integer" array="False" size=""/>
+            <output expression="&quot;Entre o valor do cateto adjacente:&quot;" newline="True"/>
+            <input variable="cat1"/>
+            <output expression="&quot;Entre o valor do cateto oposto:&quot;" newline="True"/>
+            <input variable="cat2"/>
+            <assign variable="hip1" expression="(cat1^2)+(cat2^2)"/>
+            <assign variable="hip" expression="hip1^2"/>
+            <assign variable="hip2" expression="sqrt(hip)"/>
+            <output expression="&quot;O valor da hipotenusa &#233;: &quot;&amp;hip2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
